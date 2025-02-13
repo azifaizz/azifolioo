@@ -904,3 +904,69 @@ html {
         font-size: 0.9rem;
     }
 }
+/* Header and Navigation Bar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #212324; /* Teal/Cyan color */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.portfolio-name h1 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ff7043; /* Coral/orange hover effect */
+}
+
+.menu-icon {
+    display: none; /* Hidden by default */
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide navigation links by default */
+        flex-direction: column;
+        background-color: #16191a;
+        position: absolute;
+        top: 60px; /* Below the header */
+        right: 0;
+        width: 100%;
+        padding: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex; /* Show navigation links when active */
+    }
+
+    .menu-icon {
+        display: block; /* Show hamburger menu icon on smaller screens */
+    }
+}
