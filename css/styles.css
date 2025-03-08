@@ -478,7 +478,7 @@ html {
     align-items: center;
     justify-content: center;
     padding: 15px;
-    background: #222;
+    background: #dbdbdb;
     color: white;
     border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
@@ -947,7 +947,7 @@ header {
 }
 
 .nav-links li a:hover {
-    color: #ff7043; /* Coral/orange hover effect */
+    color: #00bcd4; /* Coral/orange hover effect */
 }
 
 .menu-icon {
