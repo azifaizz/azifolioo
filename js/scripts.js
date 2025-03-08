@@ -43,3 +43,10 @@ document.addEventListener('DOMContentLoaded', function () {
         navLinks.classList.toggle('active'); // Toggle the 'active' class
     });
 });
+// Toggle Mobile Navigation
+const mobileMenu = document.getElementById("mobile-menu");
+const navMenu = document.getElementById("nav-menu");
+
+mobileMenu.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+});
